@@ -17,7 +17,7 @@
 		5792F0571ED16FAE005EFE57 /* CustomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F04E1ED16FAE005EFE57 /* CustomViewController.swift */; };
 		5792F0581ED16FAE005EFE57 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F04F1ED16FAE005EFE57 /* HomeViewController.swift */; };
 		5792F05A1ED16FAE005EFE57 /* AnalysisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F0511ED16FAE005EFE57 /* AnalysisController.swift */; };
-		5792F05B1ED16FAE005EFE57 /* BlogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F0521ED16FAE005EFE57 /* BlogController.swift */; };
+		5792F05B1ED16FAE005EFE57 /* RecipeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F0521ED16FAE005EFE57 /* RecipeController.swift */; };
 		5792F05D1ED17949005EFE57 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F05C1ED17949005EFE57 /* MainController.swift */; };
 		7FF0F21580D96C9867EAF296 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BF9F625C8415BB13F86435 /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
@@ -37,7 +37,7 @@
 		5792F04F1ED16FAE005EFE57 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5792F0501ED16FAE005EFE57 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5792F0511ED16FAE005EFE57 /* AnalysisController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalysisController.swift; sourceTree = "<group>"; };
-		5792F0521ED16FAE005EFE57 /* BlogController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlogController.swift; sourceTree = "<group>"; };
+		5792F0521ED16FAE005EFE57 /* RecipeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeController.swift; sourceTree = "<group>"; };
 		5792F05C1ED17949005EFE57 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		6D75AD0BD573D4852B296B97 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,7 +94,7 @@
 				5792F04E1ED16FAE005EFE57 /* CustomViewController.swift */,
 				5792F04F1ED16FAE005EFE57 /* HomeViewController.swift */,
 				5792F0511ED16FAE005EFE57 /* AnalysisController.swift */,
-				5792F0521ED16FAE005EFE57 /* BlogController.swift */,
+				5792F0521ED16FAE005EFE57 /* RecipeController.swift */,
 				5792F0501ED16FAE005EFE57 /* Info.plist */,
 			);
 			path = Example;
@@ -237,7 +237,7 @@
 				5792F05A1ED16FAE005EFE57 /* AnalysisController.swift in Sources */,
 				4E910C3E22C4D9150023357A /* MobileNetV2.mlmodel in Sources */,
 				5792F0531ED16FAE005EFE57 /* AppDelegate.swift in Sources */,
-				5792F05B1ED16FAE005EFE57 /* BlogController.swift in Sources */,
+				5792F05B1ED16FAE005EFE57 /* RecipeController.swift in Sources */,
 				5792F0581ED16FAE005EFE57 /* HomeViewController.swift in Sources */,
 				5792F05D1ED17949005EFE57 /* MainController.swift in Sources */,
 				5792F0571ED16FAE005EFE57 /* CustomViewController.swift in Sources */,

@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="-331" y="945"/>
         </scene>
-        <!--Blog View Controller-->
+        <!--Recipe View Controller-->
         <scene sceneID="qCP-8A-Sx8">
             <objects>
-                <viewController storyboardIdentifier="BlogViewController" id="2V8-2r-gov" customClass="BlogViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlogViewController" title="Recipe View Controller" id="2V8-2r-gov" customClass="BlogViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="apB-mg-U9P"/>
                         <viewControllerLayoutGuide type="bottom" id="bmo-7P-Ng4"/>
