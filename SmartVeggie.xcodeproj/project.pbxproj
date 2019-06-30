@@ -21,6 +21,7 @@
 		5792F05B1ED16FAE005EFE57 /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F0521ED16FAE005EFE57 /* RecipeViewController.swift */; };
 		5792F05D1ED17949005EFE57 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F05C1ED17949005EFE57 /* MainController.swift */; };
 		7FF0F21580D96C9867EAF296 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BF9F625C8415BB13F86435 /* Pods_Example.framework */; };
+		A845792A22C8BD5000E84024 /* testVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A845792922C8BD5000E84024 /* testVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		5792F0521ED16FAE005EFE57 /* RecipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		5792F05C1ED17949005EFE57 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		6D75AD0BD573D4852B296B97 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A845792922C8BD5000E84024 /* testVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				5792F0521ED16FAE005EFE57 /* RecipeViewController.swift */,
 				5792F04E1ED16FAE005EFE57 /* CustomViewController.swift */,
 				5792F0501ED16FAE005EFE57 /* Info.plist */,
+				A845792922C8BD5000E84024 /* testVC.swift */,
 			);
 			path = SmartVeggie;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 				4EE9432C22C888AA001C1404 /* IntroViewController.swift in Sources */,
 				5792F05B1ED16FAE005EFE57 /* RecipeViewController.swift in Sources */,
 				5792F0581ED16FAE005EFE57 /* HomeViewController.swift in Sources */,
+				A845792A22C8BD5000E84024 /* testVC.swift in Sources */,
 				5792F05D1ED17949005EFE57 /* MainController.swift in Sources */,
 				5792F0571ED16FAE005EFE57 /* CustomViewController.swift in Sources */,
 			);
