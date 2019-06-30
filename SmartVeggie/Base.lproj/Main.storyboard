@@ -20,17 +20,71 @@
                     <view key="view" contentMode="scaleToFill" id="fvl-Jx-9LZ" customClass="Intro">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.84999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="intro" translatesAutoresizingMaskIntoConstraints="NO" id="9Os-C5-1vv">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="u9c-fv-m4o">
+                                <rect key="frame" x="57" y="124" width="300" height="155"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Health has been acknowledged as one of the most significant factors in all walks of life. While balanced diet is one of the the key elements that constitute a health-oriented lifestyle. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="However, most people nowadays lack the ways and information about healthy diet, especially on the vegetarian-based food. " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="VG3-xv-qXm">
+                                <rect key="frame" x="57" y="273" width="300" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Therefore, Smart Veggie, a health toolkit, provides inspiration of balanced diet and recipes is desperately in need." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="pah-wv-J41">
+                                <rect key="frame" x="58" y="388" width="300" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="HpW-nz-WL2">
+                                <rect key="frame" x="65" y="503" width="300" height="129.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">We designed to help individuals and families to stay informed, educated and take a more active role in choosing daily diet and making their own veggie food. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbP-ag-o4W">
+                                <rect key="frame" x="203" y="395" width="10" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="MzF-2X-Elf">
+                                <rect key="frame" x="373" y="527" width="34" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.88223975896835327" green="0.92248469591140747" blue="0.86273860931396484" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Healthy-Eating" translatesAutoresizingMaskIntoConstraints="NO" id="z87-6E-0tv">
+                                <rect key="frame" x="66" y="627" width="284" height="204"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MM3-Uh-eA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-337" y="-541"/>
+            <point key="canvasLocation" x="-337.68115942028987" y="-541.07142857142856"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="E0y-rY-x46">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="8kE-Id-nzg" customClass="HomeViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="8kE-Id-nzg" customClass="HomeViewController" customModule="SmartVeggie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hE8-Vr-kva"/>
                         <viewControllerLayoutGuide type="bottom" id="Qwb-Bw-zbD"/>
@@ -61,7 +115,7 @@
         <!--Main Controller-->
         <scene sceneID="bZC-I6-Dq1">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Xuv-Jb-6ub" customClass="MainController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Xuv-Jb-6ub" customClass="MainController" customModule="SmartVeggie" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eqn-OL-lMY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-331" y="945"/>
@@ -69,7 +123,7 @@
         <!--Recipe View Controller-->
         <scene sceneID="qCP-8A-Sx8">
             <objects>
-                <viewController storyboardIdentifier="BlogViewController" title="Recipe View Controller" id="2V8-2r-gov" customClass="BlogViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlogViewController" title="Recipe View Controller" id="2V8-2r-gov" customClass="BlogViewController" customModule="SmartVeggie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="apB-mg-U9P"/>
                         <viewControllerLayoutGuide type="bottom" id="bmo-7P-Ng4"/>
@@ -87,7 +141,7 @@
         <!--Analysis View Controller-->
         <scene sceneID="U95-Gi-Nur">
             <objects>
-                <viewController storyboardIdentifier="AnalysisViewController" id="xaj-iG-Sgl" customClass="AnalysisViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnalysisViewController" id="xaj-iG-Sgl" customClass="AnalysisViewController" customModule="SmartVeggie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FaN-nL-Emn"/>
                         <viewControllerLayoutGuide type="bottom" id="h4Y-yn-N0G"/>
@@ -105,7 +159,7 @@
         <!--Custom View Controller-->
         <scene sceneID="6hj-mz-BA8">
             <objects>
-                <viewController storyboardIdentifier="CustomViewController" id="mny-RI-OMl" customClass="CustomViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CustomViewController" id="mny-RI-OMl" customClass="CustomViewController" customModule="SmartVeggie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qbq-SF-Kci"/>
                         <viewControllerLayoutGuide type="bottom" id="TSk-EV-4p6"/>
@@ -114,7 +168,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRc-Vk-QRU" customClass="CustomMenu" customModule="Example" customModuleProvider="target">
+                            <view opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xRc-Vk-QRU" customClass="CustomMenu" customModule="SmartVeggie" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
@@ -138,5 +192,7 @@
     </scenes>
     <resources>
         <image name="HOME" width="1120" height="2169"/>
+        <image name="Healthy-Eating" width="319.5" height="159"/>
+        <image name="intro" width="369" height="751.5"/>
     </resources>
 </document>
