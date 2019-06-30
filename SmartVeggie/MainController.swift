@@ -1,6 +1,9 @@
 import UIKit
 
 class MainController: UIPageViewController, UIPageViewControllerDataSource {
+    
+    public var test:Int = 103
+    
     private let controllerNames = [
         "HomeViewController",
         "AnalysisViewController",

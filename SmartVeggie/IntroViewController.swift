@@ -9,14 +9,14 @@
 import UIKit
 
 class IntroViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         
     }
-    
-
-
+    @IBAction func BackHome(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segue_back", sender: self)
+    }
 }

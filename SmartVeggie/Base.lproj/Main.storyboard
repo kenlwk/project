@@ -73,13 +73,27 @@
                                 <rect key="frame" x="66" y="627" width="284" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwY-XZ-sss">
+                                <rect key="frame" x="34" y="68" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackHome:" destination="IJ2-G5-doI" eventType="touchUpInside" id="sNG-eb-nOM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <connections>
+                        <segue destination="Xuv-Jb-6ub" kind="presentation" identifier="segue_back" id="fKr-9R-mss"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MM3-Uh-eA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-337.68115942028987" y="-541.07142857142856"/>
+            <point key="canvasLocation" x="171" y="-652"/>
         </scene>
         <!--Forum View Controller-->
         <scene sceneID="aUv-Js-o3e">
@@ -103,7 +117,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mte-au-lFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="-541"/>
+            <point key="canvasLocation" x="926" y="-541"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="E0y-rY-x46">
@@ -130,11 +144,14 @@
                     </view>
                     <connections>
                         <outlet property="fanMenu" destination="H1g-fP-w63" id="anH-PJ-Fkj"/>
+                        <segue destination="xaj-iG-Sgl" kind="presentation" identifier="segue_camera" id="Ste-X9-0WC"/>
+                        <segue destination="2V8-2r-gov" kind="presentation" identifier="segue_recipe" id="LvC-2H-S5A"/>
+                        <segue destination="IJ2-G5-doI" kind="presentation" identifier="segue_about" id="8Wp-yX-zpa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YfI-Io-etZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-347.82608695652175" y="143.97321428571428"/>
+            <point key="canvasLocation" x="-616" y="144"/>
         </scene>
         <!--Main Controller-->
         <scene sceneID="bZC-I6-Dq1">
@@ -226,7 +243,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwZ-lR-26a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="335" y="144"/>
+            <point key="canvasLocation" x="404" y="558"/>
         </scene>
         <!--Custom View Controller-->
         <scene sceneID="6hj-mz-BA8">

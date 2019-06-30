@@ -19,7 +19,6 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         fanMenu.button = FanMenuButton(
             id: "main",
             image: UIImage(named: "menu_plus"),
@@ -40,11 +39,24 @@ class HomeViewController: UIViewController {
         fanMenu.interval = (Double.pi, 2 * Double.pi)
 
         fanMenu.onItemDidClick = { button in
-            print("ItemDidClick: \(button.id)")
+            //print("ItemDidClick: \(button.id)")
+            switch button.id {
+            case "about":
+                self.performSegue(withIdentifier: "segue_about", sender: self)
+                break
+            case "camera":
+                self.performSegue(withIdentifier: "segue_camera", sender: self)
+                break
+            case "recipe":
+                self.performSegue(withIdentifier: "segue_recipe", sender: self)
+                break
+            default:
+                break
+            }
         }
 
         fanMenu.onItemWillClick = { button in
-            print("ItemWillClick: \(button.id)")
+            //print("ItemWillClick: \(button.id)")
         }
         
         fanMenu.backgroundColor = .clear
