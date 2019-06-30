@@ -10,10 +10,10 @@ class HomeViewController: UIViewController {
     
     
     let items = [
+        ("about", 0x85B1FF),
         ("camera", 0x9F85FF),
-        ("wallet", 0x85B1FF),
-        ("money_box", 0xFF703B),
-        ("visa", 0xF55B58),
+        ("recipe", 0xFF703B),
+        ("forum", 0xF55B58),
     ]
     
     override func viewDidLoad() {
