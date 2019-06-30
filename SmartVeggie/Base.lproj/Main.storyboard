@@ -12,7 +12,7 @@
         <!--Intro View Controller-->
         <scene sceneID="smU-Po-gwC">
             <objects>
-                <viewController id="IJ2-G5-doI" customClass="IntroViewController" sceneMemberID="viewController">
+                <viewController id="IJ2-G5-doI" customClass="IntroViewController" customModule="SmartVeggie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eaS-s6-1GP"/>
                         <viewControllerLayoutGuide type="bottom" id="Ptg-G7-CcX"/>
@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="u9c-fv-m4o">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9c-fv-m4o">
                                 <rect key="frame" x="57" y="124" width="300" height="155"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -33,21 +33,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="However, most people nowadays lack the ways and information about healthy diet, especially on the vegetarian-based food. " textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="VG3-xv-qXm">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="However, most people nowadays lack the ways and information about healthy diet, especially on the vegetarian-based food. " textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG3-xv-qXm">
                                 <rect key="frame" x="57" y="273" width="300" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Therefore, Smart Veggie, a health toolkit, provides inspiration of balanced diet and recipes is desperately in need." textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="pah-wv-J41">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Therefore, Smart Veggie, a health toolkit, provides inspiration of balanced diet and recipes is desperately in need." textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pah-wv-J41">
                                 <rect key="frame" x="58" y="388" width="300" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="HpW-nz-WL2">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HpW-nz-WL2">
                                 <rect key="frame" x="65" y="503" width="300" height="129.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -80,6 +80,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MM3-Uh-eA2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-337.68115942028987" y="-541.07142857142856"/>
+        </scene>
+        <!--Forum View Controller-->
+        <scene sceneID="aUv-Js-o3e">
+            <objects>
+                <viewController id="adI-R2-Pgo" customClass="ForumViewController" customModule="SmartVeggie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xct-DV-E9Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lk4-kB-Znm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GIT-8K-dLd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="forum" translatesAutoresizingMaskIntoConstraints="NO" id="C6Z-rU-mHQ">
+                                <rect key="frame" x="0.0" y="99" width="414" height="619"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mte-au-lFW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="335" y="-541"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="E0y-rY-x46">
@@ -123,7 +147,7 @@
         <!--Recipe View Controller-->
         <scene sceneID="qCP-8A-Sx8">
             <objects>
-                <viewController storyboardIdentifier="BlogViewController" title="Recipe View Controller" id="2V8-2r-gov" customClass="BlogViewController" customModule="SmartVeggie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecipeViewController" title="Recipe View Controller" id="2V8-2r-gov" customClass="RecipeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="apB-mg-U9P"/>
                         <viewControllerLayoutGuide type="bottom" id="bmo-7P-Ng4"/>
@@ -131,12 +155,60 @@
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="PWx-CU-TdK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ef8-SF-Pqi">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" id="Ufg-1w-Loe" customClass="RecipeCell" customModule="SmartVeggie" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ufg-1w-Loe" id="Np6-IH-hh5">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="109.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fmg-tD-Cam">
+                                                    <rect key="frame" x="0.0" y="10" width="160" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="160" id="JTl-HY-uSC"/>
+                                                        <constraint firstAttribute="width" secondItem="fmg-tD-Cam" secondAttribute="height" multiplier="16:9" id="wuD-jS-9yL"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="eLy-U3-arn">
+                                                    <rect key="frame" x="172" y="44.5" width="170" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="2s8-SB-MzQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="eLy-U3-arn" firstAttribute="leading" secondItem="fmg-tD-Cam" secondAttribute="trailing" constant="12" id="Cmc-IR-A02"/>
+                                                <constraint firstItem="eLy-U3-arn" firstAttribute="centerY" secondItem="Np6-IH-hh5" secondAttribute="centerY" id="R4a-kZ-IMT"/>
+                                                <constraint firstItem="fmg-tD-Cam" firstAttribute="centerY" secondItem="Np6-IH-hh5" secondAttribute="centerY" id="WSu-9u-iG0"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="eLy-U3-arn" secondAttribute="trailing" constant="12" id="yXJ-Ni-vw1"/>
+                                                <constraint firstItem="fmg-tD-Cam" firstAttribute="leading" secondItem="Np6-IH-hh5" secondAttribute="leading" id="zLI-Q0-GC4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ef8-SF-Pqi" firstAttribute="top" secondItem="apB-mg-U9P" secondAttribute="bottom" id="W5a-ZI-TI1"/>
+                            <constraint firstItem="bmo-7P-Ng4" firstAttribute="top" secondItem="Ef8-SF-Pqi" secondAttribute="bottom" id="mEl-he-45r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ef8-SF-Pqi" secondAttribute="trailing" id="rjA-5V-5bc"/>
+                            <constraint firstItem="Ef8-SF-Pqi" firstAttribute="leading" secondItem="PWx-CU-TdK" secondAttribute="leadingMargin" id="t48-It-EWB"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="4l4-BV-wtP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4FX-RV-gmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1030" y="144"/>
+            <point key="canvasLocation" x="1096" y="144"/>
         </scene>
         <!--Analysis View Controller-->
         <scene sceneID="U95-Gi-Nur">
@@ -187,12 +259,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYd-UY-v9f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748" y="144.3778110944528"/>
+            <point key="canvasLocation" x="1801" y="144"/>
         </scene>
     </scenes>
     <resources>
         <image name="HOME" width="1120" height="2169"/>
         <image name="Healthy-Eating" width="319.5" height="159"/>
+        <image name="forum" width="413" height="587"/>
         <image name="intro" width="369" height="751.5"/>
     </resources>
 </document>

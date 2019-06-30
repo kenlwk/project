@@ -4,7 +4,7 @@ class MainController: UIPageViewController, UIPageViewControllerDataSource {
     private let controllerNames = [
         "HomeViewController",
         "AnalysisViewController",
-        "BlogViewController",
+        "RecipeViewController",
         "CustomViewController"
     ]
     
