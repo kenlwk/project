@@ -39,6 +39,9 @@ class RecipeViewController: UIViewController {
         return tempRecipes
     }
     
+    @IBAction func BackHome(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segue_back", sender: self)
+    }
 }
 
 extension RecipeViewController: UITableViewDataSource, UITableViewDelegate {

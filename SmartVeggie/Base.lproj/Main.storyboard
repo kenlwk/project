@@ -164,7 +164,7 @@
         <!--Recipe View Controller-->
         <scene sceneID="qCP-8A-Sx8">
             <objects>
-                <viewController storyboardIdentifier="RecipeViewController" title="Recipe View Controller" id="2V8-2r-gov" customClass="RecipeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecipeViewController" title="Recipe View Controller" id="2V8-2r-gov" customClass="RecipeViewController" customModule="SmartVeggie" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="apB-mg-U9P"/>
                         <viewControllerLayoutGuide type="bottom" id="bmo-7P-Ng4"/>
@@ -174,7 +174,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ef8-SF-Pqi">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <rect key="frame" x="20" y="74" width="374" height="788"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" id="Ufg-1w-Loe" customClass="RecipeCell" customModule="SmartVeggie" customModuleProvider="target">
@@ -212,20 +212,34 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DnP-Yi-0wj">
+                                <rect key="frame" x="30" y="36" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="BackHome:" destination="2V8-2r-gov" eventType="touchUpInside" id="Qj1-6V-pZg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Ef8-SF-Pqi" firstAttribute="top" secondItem="apB-mg-U9P" secondAttribute="bottom" id="W5a-ZI-TI1"/>
+                            <constraint firstItem="Ef8-SF-Pqi" firstAttribute="top" secondItem="apB-mg-U9P" secondAttribute="bottom" constant="30" id="W5a-ZI-TI1"/>
                             <constraint firstItem="bmo-7P-Ng4" firstAttribute="top" secondItem="Ef8-SF-Pqi" secondAttribute="bottom" id="mEl-he-45r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Ef8-SF-Pqi" secondAttribute="trailing" id="rjA-5V-5bc"/>
                             <constraint firstItem="Ef8-SF-Pqi" firstAttribute="leading" secondItem="PWx-CU-TdK" secondAttribute="leadingMargin" id="t48-It-EWB"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="4l4-BV-wtP"/>
+                    <connections>
+                        <segue destination="Xuv-Jb-6ub" kind="presentation" identifier="segue_back" id="P4C-DS-1IY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4FX-RV-gmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1096" y="144"/>
+            <point key="canvasLocation" x="1095.6521739130435" y="143.97321428571428"/>
         </scene>
         <!--Analysis View Controller-->
         <scene sceneID="U95-Gi-Nur">
@@ -243,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwZ-lR-26a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="404" y="558"/>
+            <point key="canvasLocation" x="1096" y="905"/>
         </scene>
         <!--Custom View Controller-->
         <scene sceneID="6hj-mz-BA8">
@@ -285,4 +299,7 @@
         <image name="forum" width="413" height="587"/>
         <image name="intro" width="369" height="751.5"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="P4C-DS-1IY"/>
+    </inferredMetricsTieBreakers>
 </document>
