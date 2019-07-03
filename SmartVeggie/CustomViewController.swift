@@ -24,11 +24,11 @@ class CustomMenu: MacawView {
     let duration = 0.35
     
     let items = [
-        ("exchange","custom_twitter", 0x059FF5),
+        ("11","custom_twitter", 0x059FF5),
         ("visa", "custom_whatsup", 0x4ECD5E),
         ("wallet", "custom_telegram", 0x27A2E1),
-        ("visa", "custom_copylink", 0x595A6C),
-        ("money_box", "custom_facebook", 0x39579A)
+        ("copylink", "custom_copylink", 0x595A6C),
+        ("facebook", "custom_facebook", 0x39579A)
     ]
     
     var onSharePressed: ((_ id: String) -> ())?
@@ -154,11 +154,15 @@ class CustomButtonsScene {
         
         node.onTouchPressed { _ in
             if self.customMenu.scene!.isOpen {
-                self.select(node: node, alpha: alpha, color: data.2, customMenu: customMenu)
+                
+                self.select(node: node, alpha: alpha, color: data.2, customMenu: customMenu, withData: data)
+                
+                //UIApplication.shared.open(URL(string: "http://www.google.com")! as URL, options: [:], completionHandler: nil)
             }
         }
         return node
     }
+    
     
     func createCustomButton(radius: Double, color: Color, image: String) -> Group {
         let circle = Shape(
@@ -186,7 +190,7 @@ class CustomButtonsScene {
         ].combine().easing(Easing.easeOut)
     }
     
-    func select(node: Node, alpha: Double, color: Int, customMenu: CustomMenu) {
+    func select(node: Node, alpha: Double, color: Int, customMenu: CustomMenu, withData: (String, String, Int)) {
         let index = self.buttonsNode.contents.firstIndex(of: node)
         self.buttonsNode.contents.remove(at: index!)
         self.buttonsNode.contents.append(node)
@@ -225,6 +229,18 @@ class CustomButtonsScene {
                 self.customMenu.updateNode()
             }
             closeAnimation.play()
+            print("hihi", withData.0)
+            switch withData.0 {
+            case "facebook":
+                 UIApplication.shared.open(URL(string: "http://www.facebook.com")! as URL, options: [:], completionHandler: nil)
+                break
+            case "copylink":
+                UIApplication.shared.open(URL(string: "http://www.google.com")! as URL, options: [:], completionHandler: nil)
+                break
+            default:
+                break
+            }
+           
             
         }
     }
