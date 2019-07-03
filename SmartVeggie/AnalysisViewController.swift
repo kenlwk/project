@@ -70,6 +70,7 @@ class AnalysisViewController: UIViewController, UINavigationControllerDelegate {
     
 }
 
+@available(iOS 11.0, *)
 extension AnalysisViewController: UIImagePickerControllerDelegate {
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)

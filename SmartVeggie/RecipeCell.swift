@@ -15,8 +15,8 @@ class RecipeCell: UITableViewCell {
     @IBOutlet weak var RecipeNameLabel: UILabel!
     
     func setRecipe(recipe: Recipe) {
-        RecipeImageView.image = recipe.image
-        RecipeNameLabel.text = recipe.name
+       // RecipeImageView.image = recipe.image
+        //RecipeNameLabel.text = recipe.name
         
         
     }
