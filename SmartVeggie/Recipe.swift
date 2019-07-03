@@ -11,12 +11,20 @@ import UIKit
 
 class Recipe {
     
-    var image: UIImage
-    var name: String
+    private var image: UIImage
+    private var name: String
     
     init(image: UIImage, name: String) {
         self.image = image
         self.name = name
+    }
+    
+    func getName() -> String? {
+        return self.name;
+    }
+    
+    func getImage() -> UIImage? {
+        return self.image
     }
     
 }

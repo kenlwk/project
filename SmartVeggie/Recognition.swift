@@ -16,7 +16,7 @@ class Recognition {
     var prediction: [String]!
     
     init() {
-        
+        model = MobileNetV2()
     }
     
     //this function expect an UIImage as input, UIImage is the Image fetched from the UIImageView
@@ -25,7 +25,6 @@ class Recognition {
             print("image resized \(scaledImage.size.width), \(scaledImage.size.height)") //print resized image information
             if let pixelBuffer = ImageProcessor.generatePixelBuffer(source: scaledImage.cgImage!) {
                 guard let output = try? self.model.prediction(image: pixelBuffer) else { fatalError("Unexpected runtime error") }
-                self.addToPrediction(name: output.classLabel)
                 return output.classLabel
             }
         }
