@@ -18,6 +18,11 @@ class AnalysisViewController: UIViewController, UINavigationControllerDelegate {
         super.viewDidLoad()
     }
     
+    // BackHome button
+    @IBAction func BackHome(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segue_back", sender: self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

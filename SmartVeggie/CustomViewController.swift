@@ -10,6 +10,10 @@ class CustomViewController: UIViewController {
         customMenu.updateNode()
     }
     
+    @IBAction func BackHome(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segue_back", sender: self)
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -99,7 +103,7 @@ class CustomMenuScene {
         self.animation = [
             buttonsGroup.show(duration: customMenu.duration, scale: scale),
             menuButton.open(duration: customMenu.duration)
-        ].combine()
+            ].combine()
         self.animation?.play()
         isOpen = true
     }
@@ -111,7 +115,7 @@ class CustomButtonsScene {
     let backgroundCircle: Shape
     var animationGroup: Group!
     var buttonsNode: Group!
-
+    
     let customMenu: CustomMenu
     
     init(customMenu: CustomMenu) {
@@ -187,7 +191,7 @@ class CustomButtonsScene {
             backgroundCircle.opacityVar.animation(to: 0.0, during: duration),
             buttonsNode.opacityVar.animation(to: 1.0, during: duration),
             buttonsNode.placeVar.animation(to: buttonsNode.place.scale(sx: 2.5, sy: 2.5), during: duration)
-        ].combine().easing(Easing.easeOut)
+            ].combine().easing(Easing.easeOut)
     }
     
     func select(node: Node, alpha: Double, color: Int, customMenu: CustomMenu, withData: (String, String, Int)) {
@@ -223,8 +227,8 @@ class CustomButtonsScene {
                 ),
                 self.node.opacityVar.animation(to: 0.0, during: customMenu.duration),
                 customMenu.scene!.menuButton.updateState(isOpen: false, duration: customMenu.duration)
-            ].combine()
-
+                ].combine()
+            
             closeAnimation.onComplete {
                 self.customMenu.updateNode()
             }
@@ -232,7 +236,7 @@ class CustomButtonsScene {
             print("hihi", withData.0)
             switch withData.0 {
             case "facebook":
-                 UIApplication.shared.open(URL(string: "http://www.facebook.com")! as URL, options: [:], completionHandler: nil)
+                UIApplication.shared.open(URL(string: "http://www.facebook.com")! as URL, options: [:], completionHandler: nil)
                 break
             case "twitter":
                 UIApplication.shared.open(URL(string: "https://twitter.com")! as URL, options: [:], completionHandler: nil)
@@ -249,13 +253,13 @@ class CustomButtonsScene {
             default:
                 break
             }
-           
+            
         }
     }
 }
 
 class CustomMenuButtonScene {
-
+    
     var openButtons: Group!
     var closeButtons: Group!
     var node: Group!
@@ -271,12 +275,12 @@ class CustomMenuButtonScene {
     func open(duration: Double) -> Animation {
         return updateState(isOpen: true, duration: duration)
     }
-
+    
     func updateState(isOpen: Bool, duration: Double) -> Animation {
         return [
             openButtons.opacityVar.animation(to: isOpen ? 0.0 : 1.0, during: duration),
             closeButtons.opacityVar.animation(to: isOpen ? 1.0 : 0.0, during: duration)
-        ].combine()
+            ].combine()
     }
     
     func createMenuState(image: String, radius: Double, a: Double = 1.0) -> Group {

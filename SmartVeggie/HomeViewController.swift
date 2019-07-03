@@ -50,6 +50,9 @@ class HomeViewController: UIViewController {
             case "recipe":
                 self.performSegue(withIdentifier: "segue_recipe", sender: self)
                 break
+            case "forum":
+                self.performSegue(withIdentifier: "segue_forum", sender: self)
+                break
             default:
                 break
             }
@@ -72,11 +75,3 @@ class HomeViewController: UIViewController {
 
 }
 
-/*
-class TransactionCell: UITableViewCell {
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var amountLabel: UILabel!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var transactionImage: UIImageView!
-}
-*/
