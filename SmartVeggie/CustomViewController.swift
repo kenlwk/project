@@ -24,10 +24,10 @@ class CustomMenu: MacawView {
     let duration = 0.35
     
     let items = [
-        ("11","custom_twitter", 0x059FF5),
-        ("visa", "custom_whatsup", 0x4ECD5E),
-        ("wallet", "custom_telegram", 0x27A2E1),
-        ("copylink", "custom_copylink", 0x595A6C),
+        ("twitter","custom_twitter", 0x059FF5),
+        ("whatsapp", "custom_whatsup", 0x4ECD5E),
+        ("telegram", "custom_telegram", 0x27A2E1),
+        ("website", "custom_copylink", 0x595A6C),
         ("facebook", "custom_facebook", 0x39579A)
     ]
     
@@ -234,14 +234,22 @@ class CustomButtonsScene {
             case "facebook":
                  UIApplication.shared.open(URL(string: "http://www.facebook.com")! as URL, options: [:], completionHandler: nil)
                 break
-            case "copylink":
-                UIApplication.shared.open(URL(string: "http://www.google.com")! as URL, options: [:], completionHandler: nil)
+            case "twitter":
+                UIApplication.shared.open(URL(string: "https://twitter.com")! as URL, options: [:], completionHandler: nil)
+                break
+            case "whatsapp":
+                UIApplication.shared.open(URL(string: "https://web.whatsapp.com")! as URL, options: [:], completionHandler: nil)
+                break
+            case "telegram":
+                UIApplication.shared.open(URL(string: "https://web.telegram.org")! as URL, options: [:], completionHandler: nil)
+                break
+            case "website":
+                UIApplication.shared.open(URL(string: "https://smartveggie.wixsite.com/promotion")! as URL, options: [:], completionHandler: nil)
                 break
             default:
                 break
             }
            
-            
         }
     }
 }
