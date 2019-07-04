@@ -279,6 +279,7 @@
                     <navigationItem key="navigationItem" id="4l4-BV-wtP"/>
                     <connections>
                         <segue destination="Xuv-Jb-6ub" kind="presentation" identifier="segue_back" id="KCg-Is-nhg"/>
+                        <segue destination="VWx-6H-6oo" kind="show" identifier="showdetail" id="qwx-hg-jfq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4FX-RV-gmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -355,6 +356,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwZ-lR-26a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="402.89855072463769" y="557.8125"/>
+        </scene>
+        <!--Detailed Recipe View Controller-->
+        <scene sceneID="ZcV-XY-bW6">
+            <objects>
+                <viewController id="VWx-6H-6oo" customClass="DetailedRecipeViewController" customModule="SmartVeggie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fo2-1I-3Lw"/>
+                        <viewControllerLayoutGuide type="bottom" id="t7S-mi-UaI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Oub-qy-3Nw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gr-ZJ-JoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1705.7971014492755" y="-541.07142857142856"/>
         </scene>
         <!--Custom View Controller-->
         <scene sceneID="6hj-mz-BA8">
@@ -448,6 +467,22 @@
             </objects>
             <point key="canvasLocation" x="1800.0000000000002" y="143.97321428571428"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6NC-Jc-Ify">
+            <objects>
+                <navigationController storyboardIdentifier="navitation" id="gX2-Vd-pvE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z6n-w5-aeZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2V8-2r-gov" kind="relationship" relationship="rootViewController" id="p0M-Fo-f1N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O9Y-vg-acH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1248" y="945"/>
+        </scene>
     </scenes>
     <resources>
         <image name="HOME" width="1120" height="2169"/>
@@ -459,6 +494,7 @@
         <image name="intro" width="369" height="751.5"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="p0M-Fo-f1N"/>
         <segue reference="KCg-Is-nhg"/>
     </inferredMetricsTieBreakers>
 </document>

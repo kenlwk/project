@@ -4,7 +4,7 @@ import Macaw
 import FanMenu
 
 class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
+
     
     let recipes = ["Stir-fried Spinach with Mushroom and Crispy Tofu",
                    "Self-Basting Grilled French Horn Mushroom",
@@ -21,11 +21,17 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RecipeTableViewCell
         
         cell.myImage.image = UIImage(named: ( recipes[indexPath.row] + ".jpg"))
         cell.myLabel.text = recipes[indexPath.row]
         return (cell)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "showdetail", sender: self)
     }
     
     
