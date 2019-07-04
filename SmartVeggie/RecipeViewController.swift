@@ -12,6 +12,7 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
                    "Spicy two-toned eggplant spaghetti",
                    "Orange Ganzi Onion Soup",
                    "Portobello Mushroom Burger",
+                   "Broccoli Quinoa Crust Pizza",
                    "Broccoli Quinoa Crust Pizza"
                     ]
     
