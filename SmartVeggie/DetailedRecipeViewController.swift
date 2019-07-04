@@ -17,7 +17,11 @@ class DetailedRecipeViewController: UIViewController {
     }
     
     
+    @IBAction func back(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "segueback", sender: self)
+    }
     
-
+    
+    
 
 }
