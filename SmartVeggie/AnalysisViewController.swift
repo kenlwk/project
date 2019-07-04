@@ -9,6 +9,7 @@ class AnalysisViewController: UIViewController, UINavigationControllerDelegate {
     //@IBOutlet weak var fanMenu: FanMenu!
    // @IBOutlet weak var topView: UIView!
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var result: UILabel!
 //    @IBOutlet weak var next: UIButton!
 //    @IBOutlet weak var tableView: UITableView!
 //    private var result: String
@@ -59,6 +60,7 @@ class AnalysisViewController: UIViewController, UINavigationControllerDelegate {
             if let output = rec.predict(image: target) {
                 print(output)
                 rec.addToPrediction(name: output)
+                 result.text = output
             }
         }
     }
@@ -71,7 +73,6 @@ class AnalysisViewController: UIViewController, UINavigationControllerDelegate {
             }
         }
     }
-    
     
 }
 
