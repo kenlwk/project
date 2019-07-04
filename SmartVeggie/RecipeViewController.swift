@@ -33,6 +33,14 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         performSegue(withIdentifier: "showdetail", sender: self)
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showdetail" {
+            if let destinationVC = segue.destination as? DetailedRecipeViewController {
+                destinationVC.segueData = ("title2","label2",302)
+            }
+            
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

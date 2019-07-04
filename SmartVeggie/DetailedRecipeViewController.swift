@@ -10,10 +10,15 @@ import UIKit
 
 class DetailedRecipeViewController: UIViewController {
 
+    var segueData : (String,String,Int) = ("title","label",30)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        print(segueData.0)
+        print(segueData.1)
+        print(segueData.2)
     }
     
     
