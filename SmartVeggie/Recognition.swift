@@ -13,7 +13,7 @@ import CoreML
 class Recognition {
     
     var model: MobileNetV2!
-    var prediction: [String]!
+    var prediction: [String]! = []
     
     init() {
         model = MobileNetV2()
