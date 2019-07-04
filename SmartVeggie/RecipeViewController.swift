@@ -28,15 +28,22 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return (cell)
     }
     
+    var pressedRow : Int = 0
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         tableView.deselectRow(at: indexPath, animated: true)
+        pressedRow=indexPath.row
         performSegue(withIdentifier: "showdetail", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showdetail" {
             if let destinationVC = segue.destination as? DetailedRecipeViewController {
-                destinationVC.segueData = ("title2","label2",302)
+                
+                destinationVC.segueData = (recipes[pressedRow],
+                                           recipes[pressedRow]+".jpg",
+                                           "ingredient placeholder, for example shoidfhaosdh",
+                                           "step placeholder, for example aoshdfposihfd",
+                                           pressedRow)
             }
             
         }
