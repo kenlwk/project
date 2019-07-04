@@ -10,6 +10,7 @@
 		4E910C3D22C4D9150023357A /* Recognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E910C3B22C4D9150023357A /* Recognition.swift */; };
 		4E910C3E22C4D9150023357A /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4E910C3C22C4D9150023357A /* MobileNetV2.mlmodel */; };
 		4E910C4422C4F3150023357A /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E910C4322C4F3150023357A /* ImageProcessor.swift */; };
+		4ECB637C22CDA54000F82EA6 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB637B22CDA54000F82EA6 /* RecipeTableViewCell.swift */; };
 		4EE9432C22C888AA001C1404 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE9432B22C888AA001C1404 /* IntroViewController.swift */; };
 		4EE9432E22C8AECF001C1404 /* ForumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE9432D22C8AECF001C1404 /* ForumViewController.swift */; };
 		5792F0531ED16FAE005EFE57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5792F0481ED16FAE005EFE57 /* AppDelegate.swift */; };
@@ -30,6 +31,7 @@
 		4E910C3B22C4D9150023357A /* Recognition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recognition.swift; sourceTree = "<group>"; };
 		4E910C3C22C4D9150023357A /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		4E910C4322C4F3150023357A /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
+		4ECB637B22CDA54000F82EA6 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		4EE9432B22C888AA001C1404 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		4EE9432D22C8AECF001C1404 /* ForumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumViewController.swift; sourceTree = "<group>"; };
 		5792F0321ED16F6A005EFE57 /* SmartVeggie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartVeggie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +102,7 @@
 				4E910C4322C4F3150023357A /* ImageProcessor.swift */,
 				4E910C3B22C4D9150023357A /* Recognition.swift */,
 				5792F0521ED16FAE005EFE57 /* RecipeViewController.swift */,
+				4ECB637B22CDA54000F82EA6 /* RecipeTableViewCell.swift */,
 				5792F04E1ED16FAE005EFE57 /* CustomViewController.swift */,
 				5792F0501ED16FAE005EFE57 /* Info.plist */,
 			);
@@ -241,6 +244,7 @@
 				4E910C3D22C4D9150023357A /* Recognition.swift in Sources */,
 				4E910C4422C4F3150023357A /* ImageProcessor.swift in Sources */,
 				5792F05A1ED16FAE005EFE57 /* AnalysisViewController.swift in Sources */,
+				4ECB637C22CDA54000F82EA6 /* RecipeTableViewCell.swift in Sources */,
 				4E910C3E22C4D9150023357A /* MobileNetV2.mlmodel in Sources */,
 				5792F0531ED16FAE005EFE57 /* AppDelegate.swift in Sources */,
 				4EE9432C22C888AA001C1404 /* IntroViewController.swift in Sources */,
