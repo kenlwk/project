@@ -6,7 +6,14 @@ import FanMenu
 class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
-    let recipes = ["Recipe1", "Recipe2", "Recipe3"]
+    let recipes = ["Stir-fried Spinach with Mushroom and Crispy Tofu",
+                   "Self-Basting Grilled French Horn Mushroom",
+                   "Miso vegetarian dumplings",
+                   "Spicy two-toned eggplant spaghetti",
+                   "Orange Ganzi Onion Soup",
+                   "Portobello Mushroom Burger",
+                   "Broccoli Quinoa Crust Pizza"
+                    ]
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (recipes.count)
