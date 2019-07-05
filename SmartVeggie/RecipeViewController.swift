@@ -5,8 +5,20 @@ import FanMenu
 
 class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var selection=[99]
+    var toPresent=[String]()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        toPresent = recipes
+        if selection.contains(99) {
+            return
+        }
+        var toKeep = [String]()
+        for i in selection{
+            toKeep.append(recipes[i])
+        }
+        toPresent.removeAll(where: { !toKeep.contains($0)})
     }
     
     @IBAction func BackHome(_ sender: UIButton) {
@@ -24,15 +36,15 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     ]
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (recipes.count)
+        return (toPresent.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! RecipeTableViewCell
         
-        cell.myImage.image = UIImage(named: ( recipes[indexPath.row] + ".jpg"))
-        cell.myLabel.text = recipes[indexPath.row]
+        cell.myImage.image = UIImage(named: ( toPresent[indexPath.row] + ".jpg"))
+        cell.myLabel.text = toPresent[indexPath.row]
         return (cell)
     }
     
@@ -109,8 +121,8 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     break
                 }
                 
-                destinationVC.segueData = (recipes[pressedRow],
-                                           recipes[pressedRow]+".jpg",
+                destinationVC.segueData = (toPresent[pressedRow],
+                                           toPresent[pressedRow]+".jpg",
                                            ingredients,
                                            steps,
                                            pressedRow)

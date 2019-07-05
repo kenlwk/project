@@ -371,6 +371,9 @@
                                 <state key="normal" title="Recipe">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="RecommendRecipe:" destination="xaj-iG-Sgl" eventType="touchUpInside" id="Bt8-u2-kri"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Bp-dK-EGz">
                                 <rect key="frame" x="127" y="722" width="160" height="40"/>
@@ -394,11 +397,12 @@
                         <outlet property="imageView" destination="PAo-iA-Q43" id="bGd-66-Bsj"/>
                         <outlet property="result" destination="jpA-uh-LeF" id="Qjp-fq-PA5"/>
                         <segue destination="Xuv-Jb-6ub" kind="presentation" identifier="segue_back" id="3vG-HU-ofk"/>
+                        <segue destination="2V8-2r-gov" kind="presentation" identifier="segue_recipe" id="f9D-1x-mhI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwZ-lR-26a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="328.98550724637681" y="427.90178571428572"/>
+            <point key="canvasLocation" x="225" y="108"/>
         </scene>
         <!--Detailed Recipe View Controller-->
         <scene sceneID="ZcV-XY-bW6">
@@ -624,7 +628,7 @@
         <image name="intro" width="369" height="751.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="LvC-2H-S5A"/>
-        <segue reference="56F-Es-BLa"/>
+        <segue reference="f9D-1x-mhI"/>
+        <segue reference="3vG-HU-ofk"/>
     </inferredMetricsTieBreakers>
 </document>

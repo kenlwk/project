@@ -73,4 +73,12 @@ class MainController: UIPageViewController, UIPageViewControllerDataSource {
         
         return index
     }
+    
+//    @objc public func Test(){
+//        print("hello world")
+//        guard let currentViewController = self.controllers else { return }
+//        guard let nextViewController = dataSource?.pageViewController( self, viewControllerAfter: currentViewController ) else { return }
+//        
+//        self.setViewControllers([nextViewController], direction: .forward, animated: true, completion: .none)
+//    }
 }

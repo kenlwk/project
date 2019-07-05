@@ -15,6 +15,14 @@ class AnalysisViewController: UIViewController, UINavigationControllerDelegate {
 //    private var result: String
     private var rec: Recognition!
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue_recipe" {
+            if let destinationVC = segue.destination as? RecipeViewController {
+                destinationVC.selection = Ingredient2RecipeNum(ingredientName: (rec.getPrediction()?.first)!)
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -58,7 +66,7 @@ class AnalysisViewController: UIViewController, UINavigationControllerDelegate {
     @IBAction func seeWhatIHave() {
         if let target = imageView?.image {
             if let output = rec.predict(image: target) {
-                print(output)
+                print("The output is: " + output)
                 rec.addToPrediction(name: output)
                  result.text = output
             }
@@ -73,7 +81,32 @@ class AnalysisViewController: UIViewController, UINavigationControllerDelegate {
             }
         }
     }
+    @IBAction func RecommendRecipe(_ sender: UIButton) {
+//let viewController = UIApplication.shared.keyWindow!.rootViewController as! MainController
+//        viewController.Test()
+      self.performSegue(withIdentifier: "segue_recipe", sender: self)
+    }
     
+    func Ingredient2RecipeNum (ingredientName:String) -> [Int] {
+        switch ingredientName.lowercased() {
+        case "mushroom":
+            return [0,1,5]
+        case "french loaf":
+            return [0]
+        case "corn":
+            return [2,7]
+        case "carbonara":
+            return [3]
+        case "orange":
+            return [4]
+        case "head cabbage":
+            return [5]
+        case "broccoli":
+            return [6,7]
+        default:
+            return [99]
+        }
+    }
 }
 
 @available(iOS 11.0, *)
