@@ -12,11 +12,11 @@ import CoreML
 @available(iOS 11.0, *)
 class Recognition {
     
-    var model: MobileNetV2!
+    var model: Resnet50!
     var prediction: [String]! = []
     
     init() {
-        model = MobileNetV2()
+        model = Resnet50()
     }
     
     //this function expect an UIImage as input, UIImage is the Image fetched from the UIImageView

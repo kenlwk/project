@@ -47,6 +47,7 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if segue.identifier == "showdetail" {
             if let destinationVC = segue.destination as? DetailedRecipeViewController {
                 
+                //ingredient database
                 var ingredients = String()
                 switch pressedRow {
                 case 0:
@@ -77,14 +78,7 @@ class RecipeViewController: UIViewController, UITableViewDelegate, UITableViewDa
                     break
                 }
                 
-                
-                
-                
-                
-                
-                
-                
-                
+                //steps database
                 var steps = String()
                 switch pressedRow {
                 case 0:

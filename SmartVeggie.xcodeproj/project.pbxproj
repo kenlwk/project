@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E81EA6E22CF213600A856EC /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4E81EA6D22CF213600A856EC /* Resnet50.mlmodel */; };
 		4E85708522CDDF0300EECF28 /* DetailedRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E85708422CDDF0300EECF28 /* DetailedRecipeViewController.swift */; };
 		4E910C3D22C4D9150023357A /* Recognition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E910C3B22C4D9150023357A /* Recognition.swift */; };
-		4E910C3E22C4D9150023357A /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 4E910C3C22C4D9150023357A /* MobileNetV2.mlmodel */; };
 		4E910C4422C4F3150023357A /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E910C4322C4F3150023357A /* ImageProcessor.swift */; };
 		4ECB637C22CDA54000F82EA6 /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ECB637B22CDA54000F82EA6 /* RecipeTableViewCell.swift */; };
 		4EE9432C22C888AA001C1404 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EE9432B22C888AA001C1404 /* IntroViewController.swift */; };
@@ -29,9 +29,9 @@
 /* Begin PBXFileReference section */
 		0C022DECF30F3AFF211638FD /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		48BF9F625C8415BB13F86435 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E81EA6D22CF213600A856EC /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		4E85708422CDDF0300EECF28 /* DetailedRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedRecipeViewController.swift; sourceTree = "<group>"; };
 		4E910C3B22C4D9150023357A /* Recognition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recognition.swift; sourceTree = "<group>"; };
-		4E910C3C22C4D9150023357A /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
 		4E910C4322C4F3150023357A /* ImageProcessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageProcessor.swift; sourceTree = "<group>"; };
 		4ECB637B22CDA54000F82EA6 /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		4EE9432B22C888AA001C1404 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 		5792F0471ED16FAE005EFE57 /* SmartVeggie */ = {
 			isa = PBXGroup;
 			children = (
-				4E910C3C22C4D9150023357A /* MobileNetV2.mlmodel */,
+				4E81EA6D22CF213600A856EC /* Resnet50.mlmodel */,
 				4EE9432B22C888AA001C1404 /* IntroViewController.swift */,
 				4EE9432D22C8AECF001C1404 /* ForumViewController.swift */,
 				5792F0481ED16FAE005EFE57 /* AppDelegate.swift */,
@@ -244,11 +244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E81EA6E22CF213600A856EC /* Resnet50.mlmodel in Sources */,
 				4E910C3D22C4D9150023357A /* Recognition.swift in Sources */,
 				4E910C4422C4F3150023357A /* ImageProcessor.swift in Sources */,
 				5792F05A1ED16FAE005EFE57 /* AnalysisViewController.swift in Sources */,
 				4ECB637C22CDA54000F82EA6 /* RecipeTableViewCell.swift in Sources */,
-				4E910C3E22C4D9150023357A /* MobileNetV2.mlmodel in Sources */,
 				4E85708522CDDF0300EECF28 /* DetailedRecipeViewController.swift in Sources */,
 				5792F0531ED16FAE005EFE57 /* AppDelegate.swift in Sources */,
 				4EE9432C22C888AA001C1404 /* IntroViewController.swift in Sources */,
