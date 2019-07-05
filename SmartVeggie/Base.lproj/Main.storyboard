@@ -162,9 +162,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H1g-fP-w63" customClass="FanMenu" customModule="FanMenu">
-                                <rect key="frame" x="115" y="508" width="358" height="244"/>
+                                <rect key="frame" x="115" y="501" width="358" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="getstart" translatesAutoresizingMaskIntoConstraints="NO" id="nxD-qh-NQd">
+                                <rect key="frame" x="200" y="628" width="189" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -616,10 +620,11 @@
         <image name="bg" width="560" height="1084.5"/>
         <image name="bg2" width="560" height="1084.5"/>
         <image name="forum" width="413" height="587"/>
+        <image name="getstart" width="567" height="751.5"/>
         <image name="intro" width="369" height="751.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="4QB-E7-4Hu"/>
-        <segue reference="3vG-HU-ofk"/>
+        <segue reference="LvC-2H-S5A"/>
+        <segue reference="fKr-9R-mss"/>
     </inferredMetricsTieBreakers>
 </document>
