@@ -88,21 +88,41 @@ class AnalysisViewController: UIViewController, UINavigationControllerDelegate {
     }
     
     func Ingredient2RecipeNum (ingredientName:String) -> [Int] {
-        switch ingredientName.lowercased() {
-        case "mushroom":
+        switch ingredientName {
+        case "Mushroom":
             return [0,1,5]
-        case "french loaf":
+        case "French Loaf":
             return [0]
-        case "corn":
+        case "Corn":
             return [2,7]
-        case "carbonara":
+        case "Carbonara":
             return [3]
-        case "orange":
+        case "Orange":
             return [4]
-        case "head cabbage":
+        case "Head Cabbage":
             return [5]
-        case "broccoli":
+        case "Broccoli":
             return [6,7]
+        case "Tofo":
+            return [0]
+        case "Spinach":
+            return [0]
+        case "Black fungus":
+            return [2]
+        case "White Gourd":
+            return [2]
+        case "Noodle":
+            return [3]
+        case "Garlic":
+            return [3,4,5]
+        case "Eggplant":
+            return [3]
+        case "Onion":
+            return [4,5]
+        case "Tomato":
+            return [4,5,6]
+        case "Cheese":
+            return [5,6]
         default:
             return [99]
         }
